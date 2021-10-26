@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<link href="styles.css" rel="stylesheet" type="text/css" />
+		<title>Leere Bookstore</title>
+		<link rel="icon" type="image/png" href="images/Logo1.png">
+		
+	</head>
+
+	<body>
+		<div
+		class="header">
+		<div class="navigation_wrapper">
+			<div class="logo">Leere Bookstore
+			</div>
+				<div class="navigation">
+					<a href="#">Registro</a>
+				</div>
+			</div>
+		</div>
+		<div class="page_wrapper">
+			<!--Login section-->
+			<div class="table_cell half">
+				<div class="content">
+					<!--LOGIN-->
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			
+			<div class=" table">
+				<form action="login.php" method="POST">
+
+					<center>	<label>Nombre de usuario</label>
+						<center>	<input type="text" placeholder="Usuario" name="Nombre"></center>
+						<br>
+					</center>
+					<center>	<label class="">Contraseña</label></center>
+					<center>	<input type="password" placeholder="&#128272; Contraseña" name="Contrasena"></center>
+					<br>
+					<br>
+					<br><button type="submit">Entrar</button>
+					<div class="table_cell quater"><a href="Registro.html">Registro</a></div>
+				</form>
+
+			</div>
+		</div>
+		<script>
+		//Hack to fix hover on element with inline color set on child element for facebook and email buttons
+		var fb_button = document.getElementById("facebook_button_initial");
+		var fb_text = document.getElementById("fbchkintxt");
+		var email_button = document.getElementById("email_button_initial");
+		var email_text = document.getElementById("emchkintxt");
+		
+		if(fb_button){
+			fb_button.onmouseover = function(){
+				fb_text.style.color = "#fff";
+				
+			};
+			fb_button.onmouseout = function(){
+				fb_text.style.color = "#000)";
+				
+			};
+		}
+		
+		if(email_button){
+			email_button.onmouseover = function(){
+				email_text.style.color = "#000)";
+				
+			};
+			email_button.onmouseout = function(){
+				email_text.style.color = "#fff";
+				
+			};
+		}
+		</script>
+	</body>
+</html>
